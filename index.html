@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Таможенное дело</title>
+
+<style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+        font-family: Arial, sans-serif;
+        background: #1c1d20;
+        color: #b4b8bf;
+        line-height: 1.7;
+    }
+
+    /* Шапка */
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 70px;
+        background: #101113;
+        border-bottom: 1px solid #2f3136;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 40px;
+        z-index: 10;
+    }
+    .logo {
+        color: #ffffff;
+        font-weight: bold;
+        letter-spacing: 4px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+    .logo img { height: 46px; width: auto; }
+    nav a {
+        color: #c0c4cc;
+        text-decoration: none;
+        margin-left: 25px;
+        text-transform: uppercase;
+        font-size: 14px;
+    }
+    nav a:hover { color: #ffffff; }
+
+    /* Разделы */
+    section { padding: 100px 40px; }
+    section { max-width: 1100px; margin: 0 auto; }
+    .dark { background: #101113; max-width: 100%; }
+
+    h2 {
+        color: #ffffff;
+        font-weight: 300;
+        font-size: 32px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+        border-bottom: 2px solid #c0c4cc;
+        display: inline-block;
+        padding-bottom: 8px;
+    }
+
+    /* Главный экран */
+    #home {
+        max-width: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background: linear-gradient(160deg, #2e3036, #101113);
+    }
+    .hero-emblem {
+        height: 150px;
+        width: auto;
+        margin-bottom: 25px;
+    }
+    #home h1 {
+        color: #ffffff;
+        font-size: 64px;
+        font-weight: 200;
+        letter-spacing: 8px;
+        text-transform: uppercase;
+    }
+    #home p {
+        color: #c0c4cc;
+        font-size: 22px;
+        margin: 20px 0 40px 0;
+    }
+    .btn {
+        color: #ffffff;
+        text-decoration: none;
+        border: 1px solid #c0c4cc;
+        padding: 14px 40px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        transition: 0.3s;
+    }
+    .btn:hover { background: #c0c4cc; color: #101113; }
+
+    /* Карточки */
+    .cards { display: flex; gap: 20px; }
+    .card {
+        flex: 1;
+        background: #26282c;
+        border: 1px solid #2f3136;
+        padding: 25px;
+        transition: 0.3s;
+    }
+    .card:hover { transform: translateY(-8px); border-color: #c0c4cc; }
+    .card .num { font-size: 48px; font-weight: 200; color: #c0c4cc; }
+    .card h3 { color: #ffffff; font-weight: 400; margin: 10px 0; }
+
+    /* Карьера */
+    .career { display: flex; flex-wrap: wrap; gap: 20px; list-style: none; }
+    .career li {
+        width: 31%;
+        background: #26282c;
+        border-left: 3px solid #c0c4cc;
+        padding: 20px;
+    }
+    .career li:hover { background: #2f3136; }
+    .career strong { display: block; color: #ffffff; }
+
+    /* Об авторе */
+    .author-box {
+        max-width: 600px;
+        background: #26282c;
+        border: 1px solid #2f3136;
+        padding: 30px;
+    }
+    .author-box p { padding: 10px 0; border-bottom: 1px solid #33353a; }
+    .author-box span { color: #c0c4cc; display: inline-block; width: 130px; }
+    .author-box b { color: #ffffff; }
+
+    /* Подвал */
+    footer {
+        background: #0a0a0b;
+        text-align: center;
+        padding: 30px;
+        font-size: 14px;
+    }
+    footer img { height: 50px; width: auto; margin-bottom: 10px; }
+    footer strong { color: #ffffff; letter-spacing: 3px; }
+</style>
+</head>
+
+<body>
+
+    <header>
+        <a href="#home" class="logo">
+            <img src="1401.png" alt="Эмблема ФТС
+
+
+России">
+            ТАМОЖЕННОЕ ДЕЛО
+        </a>
+        <nav>
+            <a href="#home">Главная</a>
+            <a href="#specialty">Специальность</a>
+            <a href="#directions">Направления</a>
+            <a href="#career">Карьера</a>
+            <a href="#author">Об авторе</a>
+        </nav>
+    </header>
+
+    <section id="home">
+        <img src="1401.png" class="hero-emblem" alt="Эмблема ФТС России">
+        <h1>Таможенное дело</h1>
+        <p>На страже экономической безопасности и международной торговли</p>
+        <a href="#specialty" class="btn">Подробнее</a>
+    </section>
+
+    <section id="specialty">
+        <h2>Специальность</h2>
+        <p>Таможенное дело — это профессиональная деятельность по контролю и оформлению товаров и транспортных средств, которые перемещаются через государственную границу.
+        
+
+        <p>Специалисты проверяют документы, рассчитывают таможенные пошлины и налоги, классифицируют товары и следят за соблюдением законов. Благодаря их работе государство защищает свою экономику.</p>
+        
+
+        <p>Студенты изучают право, логистику, товароведение, экономику и иностранные языки.</p>
+    </section>
+
+    <div class="dark">
+        <section id="directions">
+            <h2>Направления</h2>
+            <div class="cards">
+                <div class="card">
+                    <div class="num">01</div>
+                    <h3>Таможенный контроль</h3>
+                    <p>Досмотр грузов и транспорта, проверка документов, борьба с контрабандой.</p>
+                </div>
+                <div class="card">
+                    <div class="num">02</div>
+                    <h3>Таможенное оформление</h3>
+                    <p>Подача деклараций, расчёт пошлин и выпуск товаров.</p>
+                </div>
+                <div class="card">
+                    <div class="num">03</div>
+                    <h3>Внешнеэкономическая деятельность</h3>
+                    <p>Экспорт и импорт, международные контракты, логистика поставок.</p>
+                </div>
+                <div class="card">
+                    <div class="num">04</div>
+                    <h3>Таможенное законодательсво</h3>
+                    <p>Таможенный кодекс ЕАЭС, международные соглашения.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section id="career">
+        <h2>Карьера</h2>
+        <p style="margin-bottom:30px;">Выпускники востребованы в государственных и коммерческих организациях:</p>
+        <ul class="career">
+            <li><strong>Таможенные органы</strong> Федеральная таможенная служба.
+            <li><strong>Таможенный брокер</strong> Оформление деклараций для компаний.
+            <li><strong>Специалист по ВЭД</strong> Организация экспорта и импорта.</li>
+            <li><strong>Логист</strong> Планирование международных перевозок.</li>
+            <li><strong>Склады и терминалы</strong> Работа в портах и на складах.</li>
+            <li><strong>Консультант</strong> Помощь бизнесу по таможенному праву.</li>
+        </ul>
+    </section>
+
+    <div class="dark">
+        <section id="author">
+            <h2>Об авторе</h2>
+            <div class="author-box">
+                <p><span>ФИО:</span> <b>Мойя Александр Сергеевич</b></p>
+                <p><span>Группа:</span> <b>ТД25-1</b></p>
+                <p><span>Университет:</span> <b>ИРНИТУ</b></p>
+                <p><span>Город:</span> <b>Иркутск</b></p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <img src="1401.png" alt="Эмблема ФТС России">
+
+        <p><strong>ТАМОЖЕННОЕ ДЕЛО</strong></p>
+        <p>Автор проекта: Мойя Александр Сергеевич, группа ТД25-1, ИРНИТУ, Иркутск, 2026</p>
+    </footer>
+
+</body>
+</html>
